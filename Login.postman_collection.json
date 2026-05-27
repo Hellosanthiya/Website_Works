@@ -1,0 +1,699 @@
+{
+  "info": {
+    "_postman_id": "b47f7f2a-7ce0-4efc-8b8e-3039642d42e0",
+    "name": "Login",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53697650"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"identifier\": \"Santhiya\",\r\n  \"email\": \"santhiyak2003kgmail.com\",\r\n  \"password\":\"Santhiya88@#\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://nackl.com/api/users/login/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "login",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Login",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"identifier\": \"Santhiya\",\r\n  \"email\": \"santhiyak2003k@gmail.com\",\r\n  \"password\":\"Santhiya88@#\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://nackl.com/api/users/login/",
+              "protocol": "https",
+              "host": [
+                "nackl",
+                "com"
+              ],
+              "path": [
+                "api",
+                "users",
+                "login",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx/1.24.0 (Ubuntu)"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 20 May 2026 10:50:09 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "551"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "POST, OPTIONS"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'self'; img-src 'self' data: https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"suspicious\": false,\n    \"reason\": null,\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgxODY2MjA5LCJpYXQiOjE3NzkyNzQyMDksImp0aSI6ImI1YjYyMWFmZTlmNDQ0ZmY4ODc4NGJlYjhlNTQyNjRiIiwidXNlcl9pZCI6IjQwIn0.rjt62tV8QeKjSNBREGmWNPeM-osvfk-pju8JBewYiv0\",\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTgxMDgxMDIwOSwiaWF0IjoxNzc5Mjc0MjA5LCJqdGkiOiI3Y2E1YjljYjZkOTE0ZjVkODgzNWY5NjgzZjRmOTA4ZiIsInVzZXJfaWQiOiI0MCJ9.3r-yKkYqlEo5PB44_L4_MCZt7KT_zRu-LW0y2xtoZ6I\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"email\": \"santhiyak2003k@gmail.com\",\r\n  \"username\": \"Santhiya\",\r\n  \"password\": \"Santhiya88@#\",\r\n  \"confirm_password\":\"Santhiya88@#\",\r\n  \"first_name\": \"Santhiya\",\r\n  \"last_name\": \"k\",\r\n  \"phone_number\": \"1234567890\",\r\n  \"org_name\": \"My Organization\",\r\n  \"brand_name\": \"My Brand\",\r\n  \"website\": \"https://example.com\",\r\n  \"description\": \"\",\r\n  \"contact_email\": \"santhiyak2003k@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://nackl.com/api/users/register/individual/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "register",
+            "individual",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Forget Password",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \r\n    \"email\": \"santhiyak2003k@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://nackl.com/api/profiles/api/2fa/forgot-pin/send-otp/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "profiles",
+            "api",
+            "2fa",
+            "forgot-pin",
+            "send-otp",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Reset Password",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"identifier\": \"Santhiya\",\r\n    \"email\": \"santhiyak2003k@gmail.com\",\r\n    \"otp\":\"500262\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://nackl.com/api/users/password-reset/verify-otp/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "password-reset",
+            "verify-otp",
+            ""
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Reset Password",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"identifier\": \"Santhiya\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://nackl.com/api/users/password-reset-request/",
+              "protocol": "https",
+              "host": [
+                "nackl",
+                "com"
+              ],
+              "path": [
+                "api",
+                "users",
+                "password-reset-request",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx/1.24.0 (Ubuntu)"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 20 May 2026 08:01:48 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "Content-Length",
+              "value": "89"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "POST, OPTIONS"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'self'; img-src 'self' data: https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"An OTP has been sent to your email address.\",\n    \"resend_count\": 0\n}"
+        },
+        {
+          "name": "Reset Password",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"identifier\":\"Santhiya\",\r\n  \"email\": \"santhiyak2003k@gmail.com\",\r\n  \"otp\": \"337348\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://nackl.com/api/users/password-reset/verify-otp/",
+              "protocol": "https",
+              "host": [
+                "nackl",
+                "com"
+              ],
+              "path": [
+                "api",
+                "users",
+                "password-reset",
+                "verify-otp",
+                ""
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx/1.24.0 (Ubuntu)"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 20 May 2026 09:52:50 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "86"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "POST, OPTIONS"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'self'; img-src 'self' data: https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": false,\n    \"message\": \"The OTP you entered is invalid or has already been used.\"\n}"
+        },
+        {
+          "name": "Reset Password",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"santhiyak2003k@gmail.com\",\r\n  \"otp\":\"315921\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://nackl.com/api/users/password-reset/verify-otp/",
+              "protocol": "https",
+              "host": [
+                "nackl",
+                "com"
+              ],
+              "path": [
+                "api",
+                "users",
+                "password-reset",
+                "verify-otp",
+                ""
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Server",
+              "value": "nginx/1.24.0 (Ubuntu)"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 20 May 2026 09:59:00 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "86"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, origin"
+            },
+            {
+              "key": "Allow",
+              "value": "POST, OPTIONS"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'self'; img-src 'self' data: https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": false,\n    \"message\": \"The OTP you entered is invalid or has already been used.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Register Email",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"santhiyak2003k@gmail.com\",\r\n    \"password\": \"Santhiya88@#\",\r\n    \"confirm password\": \"Santhiya88@#\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://nackl.com/api/core/account-recovery/set-email/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "core",
+            "account-recovery",
+            "set-email",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Facebook Auth",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://www.facebook.com/v25.0/dialog/oauth?client_id=966719372831221&redirect_url=https://nackl.com&scope=public_profile_email user_likes user_birthday user_%26ender",
+          "protocol": "https",
+          "host": [
+            "www",
+            "facebook",
+            "com"
+          ],
+          "path": [
+            "v25.0",
+            "dialog",
+            "oauth"
+          ],
+          "query": [
+            {
+              "key": "client_id",
+              "value": "966719372831221"
+            },
+            {
+              "key": "redirect_url",
+              "value": "https://nackl.com",
+              "type": "text"
+            },
+            {
+              "key": "scope",
+              "value": "public_profile_email user_likes user_birthday user_&ender",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Google Auth",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://nackl.com/api/users/login/google/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "login",
+            "google",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Send OTP",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"santhiyak2003k@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://nackl.com/api/users/send-otp/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "send-otp",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Verify OTP",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"santhiyak2003k@gmail.com\",\r\n    \"otp\": \"5517\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://nackl.com/api/users/verify-email-otp/",
+          "protocol": "https",
+          "host": [
+            "nackl",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "verify-email-otp",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Password",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
